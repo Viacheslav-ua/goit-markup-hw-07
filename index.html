@@ -105,7 +105,7 @@
       </section>
 
       <!-- Деятельность -->
-      <section class="section">
+      <section class="section operation">
         <div class="container">
           <h2 class="title">Чем мы занимаемся</h2>
           <ul class="list grid">
@@ -281,7 +281,7 @@
       </section>
     </main>
 
-    <section class="section">
+    <section class="section client">
       <div class="container">
         <h2 class="title">Постоянные клиенты</h2>
         <ul class="list grid">
@@ -333,23 +333,23 @@
 
     <footer class="page-footer">
       <div class="container">
-        <div class="requisites__blok">
+        <div class="requisites">
           <a href="./" class="link logo"><span class="logo--color">Web</span>Studio</a>
           <address>
             <ul class="list">
               <li>
-                <a href="https://goo.gl/maps/fyFfX9XR5Mxzys699" class="link contacts-adr__link" target="_blank" rel="noreferrer noopener"
+                <a href="https://goo.gl/maps/fyFfX9XR5Mxzys699" class="link requisites__link" target="_blank" rel="noreferrer noopener"
                   >г. Киев, пр-т Леси Украинки, 26
                 </a>
               </li>
-              <li><a href="mailto:info@example.com" class="link contacts__link">info@example.com</a></li>
-              <li><a href="tel:+380991111111" class="link contacts__link">+38 099 111 11 11</a></li>
+              <li><a href="mailto:info@example.com" class="link contacts-link">info@example.com</a></li>
+              <li><a href="tel:+380991111111" class="link contacts-link">+38 099 111 11 11</a></li>
             </ul>
           </address>
         </div>
 
-        <div class="social__blok">
-          <p class="footer__title">присоединяйтесь</p>
+        <div class="social">
+          <p class="page-footer__title">присоединяйтесь</p>
           <ul class="social__list list">
             <li class="social__item">
               <a href="" class="social__link">
@@ -383,12 +383,12 @@
         </div>
 
         <div class="mailing__blok">
-          <p class="footer__title">Подпишитесь на рассылку</p>
+          <p class="page-footer__title">Подпишитесь на рассылку</p>
           <form class="mailing__form">
             <input type="email" class="filed-mail" name="mailing_mail" placeholder="E-mail" required />
             <button type="submit" class="btn">
               <span>Подписаться</span>
-              <svg class="btn__send-icon" width="24" height="24">
+              <svg class="mailing__icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-send"></use>
               </svg>
             </button>
@@ -399,46 +399,46 @@
 
     <!-- modal window -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="order__modal">
-        <button type="button" class="close__btn" data-modal-close aria-label="кнопка закрыть окно">
-          <svg class="close__icon" width="18" height="18">
+      <div class="order-modal">
+        <button type="button" class="close-btn" data-modal-close aria-label="кнопка закрыть окно">
+          <svg class="close-btn__icon" width="18" height="18">
             <use href="./images/icons.svg#icon-close"></use>
           </svg>
         </button>
         <form class="user-data-form">
-          <p class="user-data__title">Оставьте свои данные, мы вам перезвоним</p>
-          <div class="user-data__filed">
+          <p class="order-modal__title">Оставьте свои данные, мы вам перезвоним</p>
+          <div class="order-modal__filed">
             <label for="user_name">Имя</label>
             <input type="text" id="user_name" name="user_name" />
-            <svg class="field-icon" width="18" height="18">
+            <svg class="order-modal__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-person"></use>
             </svg>
           </div>
 
-          <div class="user-data__filed">
+          <div class="order-modal__filed">
             <label for="user_tel">Телефон</label>
             <input type="tel" id="user_tel" name="user_tel" required />
-            <svg class="field-icon" width="18" height="18">
+            <svg class="order-modal__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-phone"></use>
             </svg>
           </div>
 
-          <div class="user-data__filed">
+          <div class="order-modal__filed">
             <label for="user_mail">Почта</label>
             <input type="email" id="user_mail" name="user_mail" />
-            <svg class="field-icon" width="18" height="18">
+            <svg class="order-modal__icon" width="18" height="18">
               <use href="./images/icons.svg#icon-email"></use>
             </svg>
           </div>
 
-          <div class="user-data__filed">
+          <div class="order-modal__filed">
             <label for="comment">Комментарий</label>
-            <textarea class="filed-comment" name="comment" placeholder="Введите текст" id="comment" cols="" rows="5"></textarea>
+            <textarea class="order-modal__comment" name="comment" placeholder="Введите текст" id="comment" cols="" rows="5"></textarea>
           </div>
 
-          <div class="user-data__check">
+          <div class="order-modal__check">
             <label>
-              <input type="checkbox" name="pact" />
+              <input type="checkbox" class="order-modal_checkbox" name="pact" />
               <span class="check-icon"></span>
               Соглашаюсь с рассылкой и принимаю <a href="javascript:void(0)" class="accord">Условия договора</a>
             </label>
