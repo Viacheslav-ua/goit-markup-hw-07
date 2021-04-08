@@ -6,7 +6,7 @@
   --accent-hover: #188ce8;
   --bgc: #f5f4fa;
   --bgc-dark: #2f303a;
-  --icon-color: #afb1b8; 
+  --icon-color: #afb1b8;
   --img-overlay: rgba(47, 48, 58, 0.4);
   --half-tone: rgba(255, 255, 255, 0.6);
   --shadow: rgba(0, 0, 0, 0.15);
@@ -107,7 +107,6 @@ textarea {
   margin-top: 30px;
 }
 
-
 /* global-header ------------------------------------------*/
 .page-header {
   display: flex;
@@ -120,7 +119,7 @@ textarea {
   align-items: center;
 }
 
-.page-header .logo {
+.page-header__logo {
   color: black;
 }
 
@@ -160,7 +159,7 @@ textarea {
   justify-content: center;
   position: relative;
   color: var(--accent);
-  height: 100%; */
+  height: 100%;
 }
 
 .current::after {
@@ -232,7 +231,7 @@ textarea {
   width: calc((50% - 45px) / 2);
 }
 
-.page-footer .logo {
+.page-footer__logo {
   color: white;
   margin-bottom: 20px;
 }
@@ -314,7 +313,7 @@ textarea {
 .social__link:focus {
   background-color: var(--accent);
 }
- 
+
 .mailing__blok {
   padding-top: 72px;
   width: calc(50% - 15px);
@@ -354,9 +353,8 @@ textarea {
 }
 
 .mailing__icon {
-  margin-left: 10px ;
+  margin-left: 10px;
 }
-
 
 /* main-index ----------------------------------------------*/
 /*-------------- hero */
@@ -449,11 +447,9 @@ textarea {
   min-width: 528px;
   min-height: 581px;
   transform: scale(1) translate(-50%, -50%);
-  
+
   background-color: white;
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-  0px 1px 1px rgba(0, 0, 0, 0.14),
-  0px 2px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
   transition-property: transform;
@@ -464,11 +460,10 @@ textarea {
 .is-hidden {
   opacity: 0;
   pointer-events: none;
-  
+
   transition-property: opacity;
   transition-duration: 300ms;
   transition-timing-function: linear;
-
 }
 
 .is-hidden .order-modal {
@@ -477,7 +472,6 @@ textarea {
   transition-property: transform;
   transition-duration: 300ms;
   transition-timing-function: linear;
-
 }
 
 .close-btn {
@@ -499,7 +493,7 @@ textarea {
   transition-timing-function: var(--timing-function);
 }
 
-.close-btn:hover .close-btn__icon{
+.close-btn:hover .close-btn__icon {
   fill: var(--accent);
 }
 
@@ -542,8 +536,6 @@ textarea {
   transition-timing-function: var(--timing-function);
 }
 
-
-
 .order-modal__filed label {
   margin-bottom: 4px;
 }
@@ -567,13 +559,11 @@ textarea {
 .order-modal__filed input:focus,
 .order-modal__comment:focus {
   border-color: var(--accent);
-  outline: none
- 
+  outline: none;
 }
 
 .user-data-form input:focus + .order-modal__icon {
   fill: var(--accent);
- 
 }
 
 .order-modal__comment {
@@ -619,18 +609,15 @@ textarea {
   width: 16px;
   height: 15px;
   margin-right: 8px;
-  border: 2px solid var(--basic-text); ;
+  border: 2px solid var(--basic-text);
   border-radius: 2px;
   background-color: white;
   background-image: url();
 
-  transition-property: border,
-    background-color,
-    background-image;
+  transition-property: border, background-color, background-image;
   transition-duration: 250ms;
   transition-timing-function: var(--timing-function);
 }
-
 
 .order-modal_checkbox:checked + .check-icon {
   border: none;
@@ -678,10 +665,10 @@ textarea {
 .section.features {
   padding-bottom: 0;
 }
+/* _____________________________  */
 
 .operation__item {
   --grid-item: 3;
-   
 }
 
 .operation__blok {
@@ -822,7 +809,6 @@ textarea {
 .project__face {
   position: relative;
   overflow: hidden;
-
 }
 
 .project__overlay {
@@ -909,7 +895,6 @@ textarea {
 .buttons-block > li:last-child .button {
   margin-right: 0;
 }
-
 
 .button:hover,
 .button:focus {
